@@ -1,0 +1,9 @@
+# Local device pairings and per-machine settings
+devices.json
+*.local.json
+
+# Editor and generated output
+.vs/
+.vscode/
+*.user
+*.log

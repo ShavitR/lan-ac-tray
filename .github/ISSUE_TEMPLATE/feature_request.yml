@@ -1,0 +1,35 @@
+name: Feature request
+description: Suggest a focused improvement or a new device protocol.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Device support depends on the local protocol, not just the brand. Please do not include local IP addresses, MAC addresses, Wi-Fi names, device IDs, or packet captures.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: input
+    id: device_family
+    attributes:
+      label: Device family or protocol, if relevant
+      description: Add a public protocol document or reference link when available.
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I checked this request for local IP addresses, MAC addresses, Wi-Fi names, device IDs, and private data.
+          required: true
